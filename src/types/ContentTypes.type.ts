@@ -1,8 +1,8 @@
 import { DeclarationAttributes, ElementCompact } from 'xml-js';
 
-export interface XmlRelations extends ElementCompact {
+export interface XmlContentTypes extends ElementCompact {
     '_declaration': XmlDeclaration;
-    'Types': XmlRelationShip
+    'Types': XmlTypes
 }
 
 export interface XmlDeclaration {
@@ -10,13 +10,13 @@ export interface XmlDeclaration {
 }
 
 
-export interface XmlRelationShip {
-    _attributes: XmlRelationShipAttr;
+export interface XmlTypes {
+    _attributes: XmlTypesAttributes;
     Default: XmlDefault[];
     Override: XmlOverride[]
 }
 
-export interface XmlRelationShipAttr {
+export interface XmlTypesAttributes {
     xmlns: string;
 }
 

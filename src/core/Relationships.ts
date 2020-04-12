@@ -2,7 +2,7 @@ import { XmlRelations, XmlRelationShipAttr } from '../types/RelationShip.type';
 import { DeclarationAttributes, js2xml } from 'xml-js';
 
 export class Relationships {
-    xml: XmlRelations = {
+    private xml: XmlRelations = {
         '_declaration': {
             _attributes: {
                 version: '1.0',
